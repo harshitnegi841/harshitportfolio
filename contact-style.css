@@ -1,0 +1,390 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: "Montserrat", serif;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+main{
+    width:100%;
+    height: 100%;
+}
+
+nav{
+    height: 100px;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+    position: fixed;
+    top:0;
+}
+
+nav h1{
+    font-size:40px;
+    font-weight: 500;
+}
+
+nav div a{
+    text-decoration: none;
+    color:black;
+    margin-left:20px;
+    font-size:16px;
+    font-weight: 500;
+}
+
+nav div a:hover{
+    color: #584545
+}
+
+section{
+    width:100%;
+    height:70%;
+    background-image: url(images/Contact-Header.jpg);
+    background-size: cover;
+    padding:15% 10%;
+    margin-top:100px;
+    margin-bottom:75px;
+}
+
+section h1{
+    color:transparent;
+    font-size: 120px;
+    -webkit-text-stroke: 2px white;
+}
+
+#section1{
+    height: 100%;
+    weight:100%;
+    padding:0 7%;
+    display: flex;
+    margin-bottom: 100px;
+}
+
+#left1{
+    height: 100%;
+    width:50%;
+    display: flex;
+    flex-direction: column;
+}
+
+#left1 h1{
+    font-size: 35px;
+    font-weight: 600;
+    color: #444;
+    margin-bottom:40px;
+}
+
+#left1 p{
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    text-align: justify;
+    margin-bottom: 40px;
+    color:#444;
+}
+
+#right1{
+    height: 100%;
+    width: 50%;
+    padding:0 7%;
+}
+
+#right1 p{
+    font-size:15px;
+    font-weight: 400;
+    text-align: justify;
+    color:#444;
+    margin-top:20px;
+    line-height: 25px;
+}
+
+#right1 h2{
+    font-size:18px;
+    font-weight: 500;
+    color:#444;
+    margin-top: 20px;
+    margin-bottom: -5px;
+}
+
+.container{
+    width:100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:20px;
+}
+
+.container img{
+    width:100%;
+    height: 100%;
+}
+
+form label{
+    font-size:20px;
+    color:#444;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    margin-top: 10px;
+    width: 80%; 
+    padding: 10px; 
+    margin-bottom: 20px; 
+    font-size: 16px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; 
+}
+
+form button{
+    padding:10px 40px;
+    font-size: 18px;
+    color:white;
+    background-color: #444;
+    border-radius: 50px;
+}
+
+
+
+
+
+footer{
+    height:80px;
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:20px;
+}
+
+footer div a{
+    text-decoration: none;
+    color:black;
+    margin-left:20px;
+    font-size:16px;
+    font-weight: 500;
+}
+
+footer h2{
+    color:black;
+    font-weight: 500;
+    font-size:18px;
+}
+
+footer h2 span{
+    color:black;
+    font-weight: bold;
+}
+
+
+@media (max-width: 480px){
+
+    nav h1{
+        font-size:6vw;
+    }
+
+    nav div a{
+        font-size:4vw;
+    }
+
+    section{
+        height:auto;
+        text-align: center;
+        background-position: 25%;
+        display: flex;
+        flex-direction: column;
+        padding:100px 0;
+        margin-bottom: 0;
+    }
+
+    section h1{
+        font-size: 14vw;
+    }
+
+    #section1{
+        height:auto;
+        display: flex;
+        flex-direction: column;
+        margin:30px 0;
+        }
+
+    #left1{
+        width:100%;
+        margin-bottom:30px;
+    }
+    
+
+    #left1 h1{
+            font-size:26px;
+            padding:0;
+            margin:30px 0 20px;
+        }
+
+        #left1 p{
+            font-size:18px;
+        }
+    
+        form input[type="text"],
+        form input[type="email"],
+        form textarea {
+            margin-top: 10px;
+            width: 90%; 
+            padding: 10px; 
+            margin-bottom: 20px; 
+            font-size: 16px; 
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box; 
+        }
+
+        #right1{
+            width:100%;
+            padding:0;
+        }
+
+        .container{
+            width:100%;
+            height: auto;
+            background-color: red;
+            display:flex;
+            overflow-x: auto;
+            gap:0;
+            margin:20px 0 30px;
+        }
+
+        #right1 p{
+            padding:0 7%;
+        }
+        
+        #right1 h2{  
+            padding:0 7%;
+        }
+
+
+    
+        footer{
+            height:auto;
+            flex-direction: column;
+        }
+    
+        footer div{
+            margin:10px;
+        }
+    
+        footer h2{
+            margin:10px;
+        }
+
+}
+
+
+@media (min-width: 481px) and (max-width: 800px){
+
+    nav h1{
+        font-size:6vw;
+    }
+
+    nav div a{
+        font-size:4vw;
+    }
+
+    section{
+        height:auto;
+        text-align: center;
+        background-position: 25%;
+        display: flex;
+        flex-direction: column;
+        padding:100px 0;
+        margin-bottom: 0;
+    }
+
+    section h1{
+        font-size: 14vw;
+    }
+
+    #section1{
+        height:auto;
+        display: flex;
+        flex-direction: column;
+        margin:30px 0;
+        }
+
+    #left1{
+        width:100%;
+        margin-bottom:30px;
+    }
+    
+
+    #left1 h1{
+            font-size:26px;
+            padding:0;
+            margin:30px 0 20px;
+        }
+
+        #left1 p{
+            font-size:18px;
+        }
+    
+        form input[type="text"],
+        form input[type="email"],
+        form textarea {
+            margin-top: 10px;
+            width: 90%; 
+            padding: 10px; 
+            margin-bottom: 20px; 
+            font-size: 16px; 
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box; 
+        }
+
+        #right1{
+            width:100%;
+            padding:0;
+        }
+
+        .container{
+            width:100%;
+            height: auto;
+            background-color: red;
+            display:flex;
+            overflow-x: auto;
+            gap:0;
+            margin:20px 0 30px;
+        }
+
+        #right1 p{
+            padding:0 7%;
+        }
+        
+        #right1 h2{  
+            padding:0 7%;
+        }
+
+
+    
+        footer{
+            height:auto;
+            flex-direction: column;
+        }
+    
+        footer div{
+            margin:10px;
+        }
+    
+        footer h2{
+            margin:10px;
+        } 
+
+
+
+}
