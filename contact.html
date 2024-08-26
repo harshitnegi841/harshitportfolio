@@ -31,16 +31,16 @@
         <div id="left1">
             <h1>Let's Connect!</h1>
             <p>I love meeting new people and collaborating with individuals, businesses, and creative professionals to bring innovative web solutions to life. Whether you have a project in mind, need a developer's expertise, or just want to say hello or ask a question, fill out the form below, and I'll get back to you!</p>
-            <!--action="https://formbold.com/s/91pyR" method="post" -->
-            <form >
+            
+            <form action="https://formbold.com/s/91pyR" method="post">
                 <label for="name">Your Name (required)</label><br>
-                <input type="text" id="name" name="name" required  pattern="[A-Z]*" title="Only uppercase letters" >
+                <input type="text" id="name" name="name" required  pattern="[a-z A-Z]*" title="numberic values are not allowed!" >
                 <br>
                 <label for="emails">Your Email (required)</label><br>
-                <input type="email" id="emails" name="email" required>
+                <input type="email" id="emails" pattern="^[a-zA-Z0-9.]+@gmail\.com$" name="email" required>
                 <br>
                 <label for="typingarea">Your Message</label><br>
-                <textarea id="typingarea" name="message"></textarea><br>
+                <textarea id="typingarea" minlength="50" required name="message"></textarea><br>
                 <button type="submit" id="submit">Submit</button>
             </form>
         </div>
